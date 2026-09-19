@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fantasy GM Dashboard</title>
+<style>
+:root{--bg:#0f1419;--card:#1a2332;--text:#e7ecf3;--muted:#8b9bb4;--ok:#3dd68c;--bad:#ff6b6b;--accent:#5b9dff;--line:#2a3548}
+*{box-sizing:border-box}body{margin:0;font-family:ui-sans-serif,system-ui,sans-serif;background:radial-gradient(1200px 600px at 10% -10%,#1b2a44,var(--bg));color:var(--text);padding:24px}
+h1{margin:0 0 4px;font-size:1.6rem}.meta{color:var(--muted);margin-bottom:20px;font-size:.9rem}
+.board{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.card{background:linear-gradient(180deg,#1e2a3d,var(--card));border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.card header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.avatar{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--line);flex-shrink:0;background:#24344d}
+.titles{flex:1;min-width:0}.card h2{margin:0;font-size:1.15rem}.sub{margin:4px 0 0;color:var(--muted);font-size:.8rem}
+.pill{background:#24344d;color:var(--accent);border-radius:999px;padding:6px 10px;font-weight:600;font-size:.85rem;white-space:nowrap}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+label{display:block;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.04em}
+.val{font-weight:600;margin-top:2px}.val.small{font-weight:500;font-size:.85rem;color:var(--muted)}
+.ok{color:var(--ok)}.bad{color:var(--bad)}.muted{color:var(--muted)}
+.section{margin-top:8px;padding-top:8px;border-top:1px solid var(--line)}
+.section ul{margin:6px 0 0;padding-left:18px}.section li.ok{color:var(--ok)}
+footer{margin-top:20px;color:var(--muted);font-size:.8rem}code{background:#24344d;padding:2px 6px;border-radius:6px}
+</style></head><body>
+<h1>Fantasy GM Dashboard</h1>
+<p class="meta">Four active teams · 2026-09-19 10:11 AM PT · DB <code>2026-09-19T09:52:29-07:00</code></p>
+<div class="board">
+    <article class="card"><header>
+    <img class="avatar" src="avatars/133114.jpg" alt="On to Cincinnati avatar" width="48" height="48"/>
+    <div class="titles"><h2>On to Cincinnati</h2>
+    <p class="sub">DMP · H2H · 133114</p></div>
+    <div class="pill">$100</div></header>
+    <div class="grid">
+    <div><label>Record</label><div class="val">1-0-0</div></div>
+    <div><label>Rank</label><div class="val">3</div></div>
+    <div><label>Opponent</label><div class="val">SQUANCHY</div></div>
+    <div><label>Waiver</label><div class="val small">weekly_gametime_tue_2day</div></div>
+    <div><label>K</label><div class="val ok">OK — Matt Gay</div></div>
+    <div><label>DST</label><div class="val ok">OK — Tampa Bay Buccaneers</div></div>
+    <div><label>IR</label><div class="val">3/4</div></div>
+    <div><label>Rostered</label><div class="val">18</div></div>
+    </div>
+    <div class="section"><label>IR</label><p>Isiah Pacheco, Nico Collins, Tank Dell</p></div>
+    <div class="section"><label>Actionable</label><ul><li>IR open 3/4 — park eligible Outs</li><li>2 open roster spot(s) — fill for max capacity</li></ul></div></article>
+    <article class="card"><header>
+    <img class="avatar" src="avatars/473699.png" alt="Cold Snap Wormzer avatar" width="48" height="48"/>
+    <div class="titles"><h2>Cold Snap Wormzer</h2>
+    <p class="sub">Headless Horsemen · Guillotine · 473699</p></div>
+    <div class="pill">$978</div></header>
+    <div class="grid">
+    <div><label>Record</label><div class="val"></div></div>
+    <div><label>Rank</label><div class="val">14</div></div>
+    <div><label>Opponent</label><div class="val">Ball Spike Bryan</div></div>
+    <div><label>Waiver</label><div class="val small">weekly_gametime_tue_1day</div></div>
+    <div><label>K</label><div class="val muted">N/A (no K)</div></div>
+    <div><label>DST</label><div class="val muted">N/A (no DST)</div></div>
+    <div><label>IR</label><div class="val">1/3</div></div>
+    <div><label>Rostered</label><div class="val">16</div></div>
+    </div>
+    <div class="section"><label>IR</label><p>Ricky Pearsall</p></div>
+    <div class="section"><label>Actionable</label><ul><li>IR open 1/3 — park eligible Outs</li></ul></div></article>
+    <article class="card"><header>
+    <img class="avatar" src="avatars/517403.png" alt="Mar-a-Lago Raiders avatar" width="48" height="48"/>
+    <div class="titles"><h2>Mar-a-Lago Raiders</h2>
+    <p class="sub">Procrastinators League · H2H · 517403</p></div>
+    <div class="pill">$1000</div></header>
+    <div class="grid">
+    <div><label>Record</label><div class="val">0-3-0</div></div>
+    <div><label>Rank</label><div class="val">8</div></div>
+    <div><label>Opponent</label><div class="val">Ken's Cal Chargers</div></div>
+    <div><label>Waiver</label><div class="val small">weekly_gametime_tue_1day</div></div>
+    <div><label>K</label><div class="val ok">OK — Jake Bates</div></div>
+    <div><label>DST</label><div class="val ok">OK — Los Angeles, Los Angeles Chargers</div></div>
+    <div><label>IR</label><div class="val">0/?</div></div>
+    <div><label>Rostered</label><div class="val">23</div></div>
+    </div>
+    <div class="section"><label>IR</label><p>—</p></div>
+    <div class="section"><label>Actionable</label><ul><li class="ok">No urgent flags</li></ul></div></article>
+    <article class="card"><header>
+    <img class="avatar" src="avatars/962941.jpg" alt="Marshall Will and Holly avatar" width="48" height="48"/>
+    <div class="titles"><h2>Marshall Will and Holly</h2>
+    <p class="sub">Toxic Positivity League (TPL) · H2H · 962941</p></div>
+    <div class="pill">Priority #7</div></header>
+    <div class="grid">
+    <div><label>Record</label><div class="val">0-1-0</div></div>
+    <div><label>Rank</label><div class="val">8</div></div>
+    <div><label>Opponent</label><div class="val">Ona's Rules</div></div>
+    <div><label>Waiver</label><div class="val small">weekly_gametime_tue_2day</div></div>
+    <div><label>K</label><div class="val bad">EMPTY ⚠️</div></div>
+    <div><label>DST</label><div class="val ok">OK — Seattle Seahawks</div></div>
+    <div><label>IR</label><div class="val">0/?</div></div>
+    <div><label>Rostered</label><div class="val">12</div></div>
+    </div>
+    <div class="section"><label>IR</label><p>—</p></div>
+    <div class="section"><label>Actionable</label><ul><li>Fill K before Sunday early lock</li><li>1 open roster spot(s) — fill for max capacity</li></ul></div></article></div>
+<footer><code>/home/box/fantasy-dashboard/index.html</code> · Avatars from Yahoo when available, else initials · Warriors parked</footer>
+</body></html>
